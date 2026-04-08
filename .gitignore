@@ -1,7 +1,7 @@
 # Project-specific .gitignore file for Youtuber GPT project.
-data/video_list.jsonl
-data/transcripts/
+data/*
 temp*
+.github/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
