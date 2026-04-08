@@ -1,5 +1,5 @@
 import sys
-import src.video_list as video_list
+import video_list as video_list
 
 CHANNEL_URL = "https://www.youtube.com/@brunoreikdal_oficial/videos"
 VIDEO_LIST_FILE = "data/video_list.jsonl"
