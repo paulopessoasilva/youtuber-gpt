@@ -97,6 +97,8 @@ def get_video_transcripts(video_list, target_folder):
             transcript = ytt_api.fetch(video_id=v_id, languages=["pt-BR", "pt"])
 
             with open(filename, "w", encoding="utf-8") as f:
+                # The first line is the video metadata, and the rest are the transcript lines.
+                f.write(f"{json.dumps(video, ensure_ascii=False)}\n")
                 for line in transcript:
                     f.write(f"{json.dumps(line.__dict__, ensure_ascii=False)}\n")
 
